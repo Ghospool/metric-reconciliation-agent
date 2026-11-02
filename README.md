@@ -1,6 +1,6 @@
 # Metric Reconciliation Agent
 
-An autonomous agent plus a deterministic engine that explains why two reports disagree. Part of my Claude agentic workflows portfolio. (https://github.com/Ghospool/claude-agentic-workflows_practice); this repo is self-contained and includes the small shared core it uses in `src/agentic_core`.
+An autonomous agent plus a deterministic engine that explains why two reports disagree. Part of my [Claude agentic workflows portfolio] (https://github.com/Ghospool/claude-agentic-workflows_practice); this repo is self-contained and includes the small shared core it uses in `src/agentic_core`.
 
 *"Why does the dashboard say 845,645.85 when finance says 680,727.65?"* Every analyst has been asked this. This project answers it with an **auditable bridge** from one number to the other, exact to the cent, with every cause quantified, evidenced, and explained.
 
