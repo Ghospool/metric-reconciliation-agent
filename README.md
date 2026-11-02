@@ -1,4 +1,5 @@
 # Metric Reconciliation Agent
+   ![tests](https://github.com/Ghospool/metric-reconciliation-agent/actions/workflows/ci.yml/badge.svg)
 
  An autonomous agent plus a deterministic engine that explains why two reports disagree. Part of my [Claude agentic workflows portfolio](https://github.com/Ghospool/claude-agentic-workflows_practice); this repo is self-contained and includes the small shared core it uses in `src/agentic_core`.
 
