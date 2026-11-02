@@ -1,0 +1,24 @@
+{
+  "label": "October 2026 revenue",
+  "period": [
+    "2026-10-01",
+    "2026-10-31"
+  ],
+  "families": {
+    "duplicates": -1019438,
+    "status_scope": -1316651,
+    "cutoff": -258043
+  },
+  "unexplained": 0,
+  "gap": -2594132,
+  "planted": {
+    "dups": 25,
+    "cancelled": 30,
+    "cutoff": 12,
+    "prior": 6,
+    "missing_b": 0,
+    "missing_a": 0,
+    "scale": false,
+    "noise": 0
+  }
+}

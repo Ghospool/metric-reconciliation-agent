@@ -1,0 +1,23 @@
+{
+  "label": "October 2026 revenue",
+  "period": [
+    "2026-10-01",
+    "2026-10-31"
+  ],
+  "families": {
+    "missing_records": -90459,
+    "value_basis": -13565017
+  },
+  "unexplained": 0,
+  "gap": -13655476,
+  "planted": {
+    "dups": 0,
+    "cancelled": 0,
+    "cutoff": 0,
+    "prior": 0,
+    "missing_b": 15,
+    "missing_a": 8,
+    "scale": true,
+    "noise": 0
+  }
+}
