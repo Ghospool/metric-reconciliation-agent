@@ -1,0 +1,28 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run offline tests (standard library only, no API key)
+        run: python -m unittest discover -s tests
+        env:
+          PYTHONPATH: src
+          AUDIT_LOG_PATH: /dev/null
+      - name: Regenerate scenarios and run the evaluation offline
+        run: |
+          python data/generate_scenarios.py
+          python -m metric_recon.cli --offline eval data/scenarios
+        env:
+          PYTHONPATH: src
+          AUDIT_LOG_PATH: /dev/null
